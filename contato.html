@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+  <title>Contato</title>
+
+  <style>
+        
+        body{
+          background-color: rgb(59, 59, 59);
+          color: rgb(214, 214, 214);
+          margin: 0; /*deixa o conteúdo encostar na tela*/
+         }
+
+        header{
+            padding: 10px 0; /*o primeiro vale pela altura e o da direita vale pela largura do padding*/
+            text-align: center; 
+            background-color: orange;
+            color: rgb(77, 77, 77);
+        }
+
+        .menu a{
+            color: black;
+            text-decoration: none;
+        }
+
+        .menu{
+            list-style: none;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            background-color: orange;
+            padding: 6px 0;
+            color: black;
+            text-decoration: none;
+        }
+
+        .rodape a{
+            color: rgb(77, 77, 77);
+        }
+
+        .rodape{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-items: stretch;
+            color: rgb(77, 77, 77);
+        }
+  </style>
+</head>
+
+<body>
+<header>
+        <h1>HTML<sup>Linguagem de Marcação de Hipertexto</sup></h1>
+        <h3>Tutoriais para inciantes</h3>
+</header>
+  <nav> <!-- A tag nav serve para menus, navegações-->
+          <ul class="menu">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="index.html#html">HTML</a></li>
+              <li><a href="index.html#tal">Tabela e Listas</a></li>
+              <li><a href="index.html#linguas">Sobre CSS, HTML e JavaScript</a></li>
+              <li><a href="index.html#links">Links</a></li>
+          </ul>
+  </nav>
+
+  <form action="obrigado.html" method="get">
+  <div class="form">
+  <label>Digite seu nome: </label>
+
+    <br>
+
+    <input type="text" name="name" placeholder="Nome" required>
+
+    <br>
+
+  <label>Digite seu E-mail</label>
+
+    <br>
+
+    <input type="email" name="email"  placeholder="example@gmail.com" required>
+
+    <br>
+
+  <label>Assunto</label>
+
+    <br>
+
+    <select name="select" required>
+
+      <option value="valor1">Elogio</option>
+
+      <option value="valor2">Reclamações</option>
+
+      <option value="valor3">Outros</option>
+
+
+
+    </select>
+
+    <br>
+
+  <label>Mensagem</label>
+
+    <br>
+
+    <textarea name="msg"  placeholder="Mensagem" required></textarea>
+
+    <br>
+
+    <input type="checkbox" name="termosuser" value="concordo com os termos" required>
+
+  <label>Concordo com os Termos de Privacidade do Site</label><br>
+
+  <input type="submit" name="button" value="Enviar formulário." href="Obrigado.html">
+  </div>
+
+ </form> 
+
+       <!-- rodapé -->
+
+ <footer id="links">
+    <section class="rodape">
+    <section style="background-color:rgb(252, 191, 61) ;">
+    <p>
+        <h3>Sobre</h3>
+        <ul>
+             <li><a href="index.html">Topo</a></li>
+             <li><a href="">Política de privacidade</a></li>
+             <li><a href="">Fale conosco</a></li>
+        </ul>
+    </p>
+    </section>
+    <section style="background-color: rgb(255, 184, 31)">
+    <p>
+        <h3>Referências</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com/">W3School</a></li>
+            <li><a href="https://www.alura.com.br/?gclid=EAIaIQobChMI0ebIi4G2_gIVKuxcCh1h3wGnEAAYASAAEgKdn_D_BwE">Alura</a></li>
+            <li><a href="https://www.youtube.com/">YouTube</a></li>
+        </ul>
+    </p>
+    </section>
+    <section style="background-color: rgb(252, 191, 61);">
+    <p>
+        <h3>Tutoriais</h3>
+        <ul>
+            <li><a href="">Design</a></li>
+            <li><a href="">Marketing</a></li>
+            <li><a href="">Programação</a></li>
+            <li><a href="">Tutoriais</a></li>
+        </ul>
+    </p>
+    </section>
+    <section style="background-color: rgb(255, 184, 31)">
+    <p>
+    <ul>
+        <h3>Alguns cursos para ajudar</h3>
+        <li><a href="https://www.devmedia.com.br/curso/curso-de-html-basico/371">Curso HTML</a></li>
+        <li><a href="https://www.udemy.com/pt/topic/css/">Curso CSS</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/javascript/">Curso Js</a></li>
+    </ul>
+    </p>
+    </section>
+
+
+    </section>
+
+</body>
+
+</html>
